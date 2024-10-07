@@ -11969,28 +11969,28 @@ textarea.form-control-lg {
   background-color: red;
   height: 100vh !important;
 }
-
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) {
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    background-color: violet;
+  }
+}
+@media (min-width: 768px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     background-color: green;
   }
-  .h-100 {
-    height: 100vh !important;
-  }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    background-color: purple;
-  }
-  .h-100 {
-    height: 100vh !important;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
+@media (min-width: 992px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     background-color: blue;
   }
-  .h-100 {
-    height: 100vh !important;
+}
+@media (min-width: 1200px) {
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    background-color: yellow;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    background-color: orange;
   }
 }/*# sourceMappingURL=style.css.map */
