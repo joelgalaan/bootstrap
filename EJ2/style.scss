@@ -1,40 +1,57 @@
-// Importaciones de Bootstrap
-@import "./node_modules/bootstrap/scss/bootstrap";
-@import "./node_modules/bootstrap/scss/functions";
-@import "./node_modules/bootstrap/scss/variables";
-@import "./node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-// Definición de breakpoints personalizados
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/_mixins.scss";
+
 $grid-breakpoints: (
     xs: 0,
     sm: 250px,
     md: 500px,
     lg: 750px,
-    xl: 1050px,
-    xxl: 1300px) !default;
+    xl: 1000px,
+    xxl: 1250px);
 
-// Estilos para .container-fluid con media queries
 .container-fluid {
     background-color: red;
-    height: 100vh !important;
+}
 
-    @include media-breakpoint-up(sm) {
+@include media-breakpoint-only(sm) {
+    .container-fluid {
         background-color: violet;
     }
+}
 
-    @include media-breakpoint-up(md) {
-        background-color: green;
-    }
-
-    @include media-breakpoint-up(lg) {
-        background-color: blue;
-    }
-
-    @include media-breakpoint-up(xl) {
+@include media-breakpoint-only(md) {
+    .container-fluid {
         background-color: yellow;
     }
+}
 
-    @include media-breakpoint-up(xxl) {
-        background-color: orange;
+@include media-breakpoint-only(md) {
+    .container-fluid {
+    background-color: green;
+
     }
 }
+
+@include media-breakpoint-only(lg) {
+    .container-fluid {
+        background-color: blue;
+    
+        }
+    }
+
+@include media-breakpoint-only(xl) {
+    .container-fluid {
+        background-color: pink;
+    
+        }
+    }
+
+@include media-breakpoint-only(xxl) {
+    .container-fluid {
+        background-color: orange;
+    
+        }
+    }

@@ -1,0 +1,14 @@
+
+/* CAMBIAR COLOR EN LA CLASE PRIMARIA */
+$primary: orange;
+
+/* ASIGNAR COLOR  */
+.primary {
+    color: var(--primary);
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/_mixins.scss";
