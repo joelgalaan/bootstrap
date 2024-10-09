@@ -1,20 +1,4 @@
-// Define colores personalizados
-$custom-bg-color: yellow; // Color existente
-$secondary-bg-color: orange; // Nuevo color
-$tertiary-bg-color: purple; // Otro color nuevo
-$gray-bg-color: gray;
-.custom-bg {
-    background-color: $custom-bg-color !important;
-}
-.secondary-bg-color {
-    background-color: $secondary-bg-color !important;
-}
-.tertiary-bg-color {
-    background-color: $tertiary-bg-color !important;
-}
-.gray-bg-color{
-    background-color: $gray-bg-color !important;
-}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "../node_modules/bootstrap/scss/_grid.scss";
@@ -24,5 +8,33 @@ $gray-bg-color: gray;
 @import "../node_modules/bootstrap/scss/_mixins.scss";
 
 div{
+    border: 2px solid white;
+}
+
+// Define colores personalizados
+$custom-bg-color: yellow; // Color existente
+$secondary-bg-color: orange; // Nuevo color
+$tertiary-bg-color: purple; // Otro color nuevo
+$gray-bg-color: gray; // Color gris
+
+// Clases para colores personalizados
+.custom-bg {
+    background-color: $custom-bg-color !important;
+}
+
+.secondary-bg-color {
+    background-color: $secondary-bg-color !important;
+}
+
+.tertiary-bg-color {
+    background-color: $tertiary-bg-color !important;
+}
+
+.gray-bg-color {
+    background-color: $gray-bg-color !important;
+}
+
+// Estilo para los divs
+div {
     border: 2px solid white;
 }
