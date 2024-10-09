@@ -6,6 +6,12 @@ $gray-bg-color: gray;
 .custom-bg {
     background-color: $custom-bg-color !important;
 }
+div{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
 .secondary-bg-color {
     background-color: $secondary-bg-color !important;
 }

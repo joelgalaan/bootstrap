@@ -3,6 +3,13 @@
   background-color: yellow !important;
 }
 
+div {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
 .secondary-bg-color {
   background-color: orange !important;
 }
